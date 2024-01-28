@@ -1,14 +1,14 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import BasicModal from './AddBtn';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="fixed top-0 w-full h-[80px] flex justify-center gap-9 items-center bg-white">
       <div className="flex">
         <Image src="" alt="" />
-        <h2 className="text-black">TeachMateAI</h2>
+        <h3 className="text-black">TeachMateAI</h3>
       </div>
       
       <div>
@@ -23,10 +23,10 @@ const Navbar = () => {
       </button>   
      </form>
      </div>
-     <BasicModal />
-    {/* <button className="px-4 py-3 rounded md:ml-40 flex-shrink-0 text-sm font-bond text-white uppercase transition-all duration-150 ease-linear bg-rose-500 hover:bg-rose-400">
+     {/* <BasicModal /> */}
+      <Link to="/addForm" className="btn btn-danger px-4 py-3 rounded md:ml-40 flex-shrink-0 text-sm font-bond text-white uppercase transition-all duration-150 ease-linear bg-rose-500 hover:bg-rose-400">
         Add Task +
-      </button>  */}
+      </Link>
     </div>
   )
 }

@@ -1,21 +1,17 @@
 'use client';
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
-import Content from "./components/TaskContent";
+import HomeContent from "./HomeContent";
+import 'bootstrap/dist/css/bootstrap.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import TaskForm from "./components/TaskForm";
 
 const Home = () => {
   return (
-    <main className="w-screen h-screen relative bg-zinc-200 grid grid-column-2 grid-rows-2">
-      <div className="col-span-2">
-        <Navbar />
-      </div>
-      <div>
-        <Sidebar />
-      </div>
-      <div> 
-        <Content />
-      </div>
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomeContent />}></Route>
+        <Route path="/addForm" element={<TaskForm />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
