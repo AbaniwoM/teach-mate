@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project
+This is a Next.js project
 
 ## Getting Started
 
@@ -14,10 +14,11 @@ Dependencies used are:
 - redux.js
 - react-redux
 - bootstrap
+- tailwindcss
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Design choices
 
-To learn more about Next.js, take a look at the following resources:
+Design choices gotten by inspiration from a Saas Task Management CRM Dashboard design on behance.net 
 
